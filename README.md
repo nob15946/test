@@ -1,14 +1,17 @@
 # test
 
-### Mermaid
-mermaid
+```mermaid
 gantt
-    title A Gantt Diagram
+dateFormat  MM
+title 甘特圖
 
-    section Section
-    A task           :a1, 2014-01-01, 30d
-    Another task     :after a1  , 20d
-    section Another
-    Task in sec      :2014-01-12  , 12d
-    anther task      : 24d
 
+section 日程
+
+主題討論     :des1, after des0,5d
+資料蒐集     :des2, after des1,5d
+系統設計     :des3, after des2,8d
+攥寫程式碼   :des4, after des3,20d
+系統測試    :des5,after des4,5d
+系統整合    :des6,after des5,10d
+```
